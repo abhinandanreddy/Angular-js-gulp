@@ -1,0 +1,23 @@
+<div ng-controller="ngClass">
+
+    <h1 ng-class="[cssClass.blue]">Hello  from blue class</h1>
+    <h1 ng-class="[cssClass.yellow]">Hello  from yellow class</h1>
+
+    <hr/>
+
+    <div >
+        <b ng-class="{'blue1':n.type===1,'yellow1':n.type===2}"  ng-repeat="n in items">{{n.name}}</b>
+    </div>
+
+<hr/>
+
+    <div >
+        <b ng-class="{1:'blue1',2:'yellow1'}[n.type]"  ng-repeat="n in items">{{n.name}}</b>
+    </div>
+
+
+    <hr/>
+
+    <div><b ng-class-odd="'odd'" ng-class-even="'even'" ng-repeat="n in items"> {{n.name}}</b></div>
+
+</div>

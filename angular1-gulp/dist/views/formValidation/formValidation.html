@@ -1,0 +1,10 @@
+<div>
+    <form name="frm">
+        <input type="text" ng-model="contact.name"  name="name" ng-required="true"/>
+        <input type="email" name="email" ng-model="contact.email" ng-required="true"/>
+        <span ng-show="frm.email.$invalid">Field Required.</span>
+        <textarea name="mesaage" ng-model="contact.message" ng-required="true"></textarea>
+        <input type="submit" value="send">
+       </form>
+
+</div>
